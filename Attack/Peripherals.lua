@@ -7,8 +7,6 @@ local function GetPositionAtTime(t: number, origin: Vector3, initialVelocity: Ve
 	return origin + (initialVelocity * t) + force
 end
 
--- Assuming this function is part of a ModuleScript or a LocalScript in Roblox Studio
-
 function Module.ShowExpectedTrajectory(Acceleration, Velocity, Dir)
 	-- Get the player and their character
 	local player = SPlayer.LocalPlayer
